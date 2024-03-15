@@ -1,20 +1,61 @@
 import streamlit
-# import pandas as pd
-# import numpy as np
-# import matplotlib.pyplot as plt
-# import seaborn as sns
-# import plotly.express as px
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+import plotly.express as px
 
 
-age = streamlit.text_input("Enter your age:")
-smoke = streamlit.text_input("Enter 1 if you smoke, 0 if you don't:")
-chronic = streamlit.text_input("Enter 1 if you have a chronic disease, 2 if you don't:")
-wheezing = streamlit.text_input("Enter 1 if you have wheezing, 2 if you don't:")
-alcohol = streamlit.text_input("Enter 1 if you drink alcohol, 2 if you don't:")
-coughing = streamlit.text_input("Enter 1 if you have coughing, 2 if you don't:")
-shortness_of_breath = streamlit.text_input("Enter 1 if you have shortness of breath, 2 if you don't:")
-swallowing_difficulty = streamlit.text_input("Enter 1 if you have swallowing difficulty, 2 if you don't:")
-chest_pain = streamlit.text_input("Enter 1 if you have chest pain, 2 if you don't:")
+age = streamlit.number_input("Enter your age:")
+smoke = streamlit.radio("If you smoke", ("Yes", "No"))
+chronic = streamlit.radio("If you have chronic disease", ("Yes", "No"))
+wheezing = streamlit.radio("If you have wheezing", ("Yes", "No"))
+alcohol = streamlit.radio("If you drink alcohol", ("Yes", "No"))
+coughing = streamlit.radio("If you have coughing", ("Yes", "No"))
+shortness_of_breath = streamlit.radio("If you have shortness of breath", ("Yes", "No"))
+swallowing_difficulty = streamlit.radio("If you have swallowing difficulty", ("Yes", "No"))
+chest_pain = streamlit.radio("If you have chest pain", ("Yes", "No"))
+
+if smoke == "Yes":
+    smoke = 1
+else:
+    smoke = 0
+
+if chronic == "Yes":
+    chronic = 2
+else:
+    chronic = 1
+
+if wheezing == "Yes":
+    wheezing = 2
+else:
+    wheezing = 1
+
+if alcohol == "Yes":
+    alcohol = 2
+else:
+    alcohol = 1
+
+if coughing == "Yes":
+    coughing = 2
+else:
+    coughing = 1
+
+if shortness_of_breath == "Yes":
+    shortness_of_breath = 2
+else:
+    shortness_of_breath = 1
+
+if swallowing_difficulty == "Yes":
+    swallowing_difficulty = 2
+else:
+    swallowing_difficulty = 1
+
+if chest_pain == "Yes":
+    chest_pain = 2
+else:
+    chest_pain = 1
+
 
 
 # Path: Hackathon/app.py
