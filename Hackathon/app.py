@@ -16,6 +16,19 @@ shortness_of_breath = streamlit.radio("If you have shortness of breath", ("Yes",
 swallowing_difficulty = streamlit.radio("If you have swallowing difficulty", ("Yes", "No"))
 chest_pain = streamlit.radio("If you have chest pain", ("Yes", "No"))
 
+submit_button = streamlit.button("Submit")
+
+if submit_button:
+    streamlit.write("Age: ", age)
+    streamlit.write("Smoke: ", smoke)
+    streamlit.write("Chronic: ", chronic)
+    streamlit.write("Wheezing: ", wheezing)
+    streamlit.write("Alcohol: ", alcohol)
+    streamlit.write("Coughing: ", coughing)
+    streamlit.write("Shortness of breath: ", shortness_of_breath)
+    streamlit.write("Swallowing difficulty: ", swallowing_difficulty)
+    streamlit.write("Chest pain: ", chest_pain)
+
 if smoke == "Yes":
     smoke = 1
 else:
