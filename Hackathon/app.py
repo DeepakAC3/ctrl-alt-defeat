@@ -5,6 +5,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
 
-streamlit.title('Hackathon')
-streamlit.write('This is a hackathon project')
 
+input1 = streamlit.text_input("Enter input 1")
+input2 = streamlit.text_input("Enter input 2")
+input3 = streamlit.slider("Select input 3", min_value=0, max_value=10)
+input4 = streamlit.slider("Select input 4", min_value=0, max_value=10)
