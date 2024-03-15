@@ -1,6 +1,6 @@
 import streamlit as st
 import pymysql
-
+import streamlit.components as components
 # Function to create database connection
 def create_connection():
     connection = pymysql.connect(host='localhost',
