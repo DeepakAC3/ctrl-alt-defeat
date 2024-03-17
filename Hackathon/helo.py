@@ -49,3 +49,7 @@ st.write("You selected: ", option)
 #multiselect
 options = st.multiselect("Select multiple options", ['python','java','c++'])
 st.write("You selected: ", options)
+
+#sidebar
+st.sidebar.header("Sidebar")
+st.sidebar.button("Click",use_container_width=True)

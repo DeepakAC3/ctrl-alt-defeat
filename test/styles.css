@@ -1,0 +1,91 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background: url('bgimg.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    background-color: rgba(0, 0, 0, 0.6); /* Reduced opacity of the background */
+}
+
+img {
+    opacity: 0.9;
+    width: 220px;
+    margin-left: 100px;
+}
+
+.navbar {
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.navbar-links {
+    display: flex;
+}
+
+.navbar a {
+    color: #e6ebe2;
+    text-decoration: none;
+    font-family: cursive;
+    margin-left: 15px;
+    font-size: 22px;
+    padding: 5px 13px;
+    border: 2px solid white;
+    border-radius: 20px;
+    transition: background-color 0.3s, color 0.3s; /* Add transition for hover effects */
+}
+
+.navbar a:hover {
+    background-color: white;
+    color: #08509f;
+}
+
+.brand-title {
+    color: white;
+    font-size: 32px;
+    font-family: 'Open Sans', sans-serif;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    color: #dfddce;
+    text-align: center;
+    font-size: 44px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.main-content {
+    text-align: left;
+    width: 40%;
+    background-color: rgba(37, 62, 78, 0.8); /* Adjusted background opacity */
+    padding: 30px;
+    margin-top: 100px;
+    position: absolute;
+    top: 30%;
+    left: 4%;
+    transform: translateY(-40%);
+    color: white;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* Added shadow effect */
+}
+
+.main-content p {
+    font-size: 24px;
+    margin: 0;
+    white-space: pre-wrap;
+    overflow: hidden;
+}
+
+/* Additional global styles */
+a, p, h1 {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Subtle text shadow for all text */
+}
